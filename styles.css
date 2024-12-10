@@ -1,6 +1,7 @@
 /* Body styles */
 body {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 li {
@@ -83,7 +84,7 @@ nav .nav-list li {
 /* Main Section */
 h1 {
     text-transform: uppercase;
-    font-size: 2.5rem; /* Default font-size for larger screens */
+    font-size: 5rem; /* Default font-size for larger screens */
     color: #ffffff;
     margin-left: 10px;
 }
@@ -159,4 +160,77 @@ main {
     button {
         font-size: 1.2rem; /* Button font size for smaller screens */
     }
+}
+
+/* Information Section */
+
+i{
+    font-size: 1.5rem;
+}
+
+.info{
+    padding: 50px 50px;
+}
+
+.info .card-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info .card-block .card{
+    padding: 20px;
+}
+
+.info .card-block .card p, .info .card-block .card h4{
+    margin: 0;
+}
+
+.card{
+    font-size: 1.1rem;
+}
+
+.card-intro{
+    padding: 10px 0px 5px 0px;
+    color: #00000070;
+    text-transform: uppercase;
+}
+
+.info .card-block .card h4{
+    padding: 0px 0px 15px 0px;
+    font-size: 1.2em;
+    
+}
+
+.card-text{
+    color: #00000070;
+}
+
+@media(max-width: 960px){
+    .info .card-block{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer{
+    background-color: #152238;
+    padding: 50px;
+    color: #ffffff;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer a{
+    color: #ffffff;
 }
