@@ -1,3 +1,63 @@
-h1{
-    color: green;
+/* Body styles */
+body{
+
 }
+
+li{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+li a{
+    color: #000;
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+/* Navigation */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+nav .nav-list{
+    gap: 20px;
+    padding-right: 20px;
+  }
+
+nav .nav-list li{
+    display: inline-block;
+}
+
+.logo{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.purchase{
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+@media(max-width: 900px){
+    nav{
+        display: block;
+    }
+    nav .nav-list li{
+        display: block;
+    }
+    nav .nav-list li:hover{
+        background-color: #f3f3f3;
+        border-radius: 20px;
+    }
+
+}
+  
+  
