@@ -1,63 +1,162 @@
 /* Body styles */
-body{
-
+body {
+    margin: 0;
 }
 
-li{
+li {
     list-style-type: none;
     padding: 10px 20px;
 }
 
-li a{
+li a {
     color: #000;
     text-decoration: none;
 }
 
-li a:hover{
+li a:hover {
     text-decoration: underline;
 }
 
-/* Navigation */
+button {
+    padding: 10px;
+    background-color: #152238;
+    border: 1px solid #152238;
+    border-radius: 20px;
+    padding: 15px 60px;
+}
 
-nav{
+button a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 1.1rem;
 }
 
-nav .nav-list{
+nav .nav-list {
     gap: 20px;
     padding-right: 20px;
-  }
+}
 
-nav .nav-list li{
+nav .nav-list li {
     display: inline-block;
 }
 
-.logo{
+.logo {
     font-size: 1.4rem;
     font-weight: bold;
 }
 
-.purchase{
+.purchase {
     border: 2px solid black;
     border-radius: 20px;
     font-weight: bold;
 }
 
-@media(max-width: 900px){
-    nav{
+@media(max-width: 900px) {
+    nav {
         display: block;
     }
-    nav .nav-list li{
+    nav ul {
+        padding-left: 10px;
+    }
+    nav .nav-list li {
         display: block;
     }
-    nav .nav-list li:hover{
+    nav .nav-list li:hover {
         background-color: #f3f3f3;
         border-radius: 20px;
     }
-
 }
-  
-  
+
+/* Main Section */
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem; /* Default font-size for larger screens */
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.lb{
+    border-left: 12px solid #152238;
+}
+
+.overlay {
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 1;
+}
+
+main {
+    background-image: url(images/web-slider1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-content {
+    padding: 100px 200px;
+    font-size: 2.5rem; /* Default font size for main-content */
+}
+
+.main-content button {
+    margin-top: 40px;
+}
+
+.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.fs-2 {
+    font-size: 1.3em;
+}
+
+/* Responsiveness with Media Queries */
+@media(max-width: 1200px) {
+    .main-content {
+        font-size: 2rem; /* Font size for medium screens */
+        padding: 80px 100px;
+    }
+}
+
+@media(max-width: 960px) {
+    .main-content {
+        font-size: 4vw; /* Uses viewport width for more responsive font-size */
+        padding: 60px 80px;
+    }
+
+    h1 {
+        font-size: 5vw; /* Adjusts h1 font-size for smaller screens */
+    }
+}
+
+@media(max-width: 600px) {
+    .main-content {
+        font-size: 5vw; /* Font-size for smaller screens */
+        padding: 40px 60px;
+    }
+
+    h1 {
+        font-size: 6vw; /* Adjusts h1 font-size for very small screens */
+    }
+
+    button {
+        font-size: 1.2rem; /* Button font size for smaller screens */
+    }
+}
